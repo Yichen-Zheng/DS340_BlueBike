@@ -2,6 +2,16 @@
 
 [简体中文](README_ZH.md)
 
+## Project layout
+
+Run the commands on this page from the repository’s `forecasting/` directory.
+
+```bash
+cd forecasting
+```
+
+The trip CSVs and [notebook](../Bluebike.ipynb) stay at the repository root. The forecasting scripts, model artifacts, and local databases are under `forecasting/`. Both trip-based scripts default to the root July and August CSVs when `--trips` is omitted. The collector defaults to `forecasting/data/status.sqlite` from any working directory.
+
 ## Phase 1 · Forecasting available return docks
 
 Given a station and a reference time, forecast how many docks will be available 15 minutes later. The existing `Bluebike.ipynb` reads trip data. Use the CLI or the Python function `predict(artifact, db, station_id, at, horizon=15)` to connect forecasts to a station list. Display forecasts from real data with `status == "ok"` alongside their `target_time`. Stations that are uninstalled or closed to returns do not produce a usable forecast.
@@ -108,7 +118,7 @@ mkdir -p artifacts
 python validate_ordinary_weeks.py \
   --archive /tmp/202609-blue-bikes-stats.parquet \
   --station-information /tmp/bluebikes-station-information.json \
-  --trips 2607.csv 2608.csv > artifacts/ordinary-weeks.json
+  --trips ../2607.csv ../2608.csv > artifacts/ordinary-weeks.json
 ```
 
 Bike-share data by CityBikes contributors and available from https://data.citybik.es.
@@ -204,7 +214,7 @@ These results show the trade-off between passing actually full stations and scre
 The exploratory script uses July–August 2026 trips, excluding July 3 and 4. It summarizes checkouts and returns in four time bands, separately for weekdays and weekends. K-means uses standardized flow volume and directional patterns to form four groups. The official GBFS inventory is used for the station ID join. A group gets its own Ridge fit when it has at least 500 training samples and five training stations. Stations without enough history or a mapping use the global model.
 
 ```bash
-python flow_type_experiment.py --trips 2607.csv 2608.csv \
+python flow_type_experiment.py --trips ../2607.csv ../2608.csv \
   --station-information /tmp/bluebikes-station-information.json \
   --db data/citybikes-202609-10.sqlite \
   --model artifacts/citybikes-optional-lags-15.joblib \
@@ -392,4 +402,4 @@ This repository includes the analysis code, notebook, reports, presentations, an
 | `2608.csv` | [August 2026 trips](https://s3.amazonaws.com/hubway-data/202608-bluebikes-tripdata.zip) |
 | `2609.csv` | [September 2026 trips](https://s3.amazonaws.com/hubway-data/202609-bluebikes-tripdata.csv) |
 
-Extract the CSV from each ZIP and use the local filename shown in the table. The monthly CityBikes snapshot links for the experiments appear above. The distribution terms apply to the raw data. [Bluebikes Data License Agreement](https://bluebikes.com/data-license-agreement) · [CityBikes data terms](https://data.citybik.es/#terms)
+Extract the CSV from each ZIP and save it at the repository root using the filename in the table. The monthly CityBikes snapshot links for the experiments appear above. The distribution terms apply to the raw data. [Bluebikes Data License Agreement](https://bluebikes.com/data-license-agreement) · [CityBikes data terms](https://data.citybik.es/#terms)

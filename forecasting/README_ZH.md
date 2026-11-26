@@ -1,5 +1,15 @@
 # DS340_BlueBike
 
+## 项目目录
+
+先从仓库根目录进入 `forecasting/`，再运行下方命令。
+
+```bash
+cd forecasting
+```
+
+行程 CSV 和 [Notebook](../Bluebike.ipynb) 保留在仓库根目录。预测脚本、模型产物和本地数据库位于 `forecasting/`。两个行程分析脚本在省略 `--trips` 时，默认读取根目录的 7 月和 8 月 CSV。无论从哪里运行，采集脚本默认写入 `forecasting/data/status.sqlite`。
+
 ## 第一阶段 · 可用还车空位回归
 
 给定站点和基准时间 t，预测 t+15 分钟的可用空位数量。仓库现有的 `Bluebike.ipynb` 读取行程数据，没有站点列表前端。可通过下方 CLI 或 Python 的 `predict(artifact, db, station_id, at, horizon=15)` 接入站点列表。仅使用 `status == "ok"` 的真实数据预测，展示为“预测空位”及对应的 `target_time`。拒绝还车或未安装的站点不会产生可用预测。
@@ -108,7 +118,7 @@ mkdir -p artifacts
 python validate_ordinary_weeks.py \
   --archive /tmp/202609-blue-bikes-stats.parquet \
   --station-information /tmp/bluebikes-station-information.json \
-  --trips 2607.csv 2608.csv > artifacts/ordinary-weeks.json
+  --trips ../2607.csv ../2608.csv > artifacts/ordinary-weeks.json
 ```
 
 Bike-share data by CityBikes contributors and available from https://data.citybik.es.
@@ -204,7 +214,7 @@ python dock_regression.py predict --db data/citybikes-202609-10.sqlite \
 探索脚本用 2026 年 7–8 月行程，排除 7 月 3 日和 4 日，按工作日/周末、四个时段以及借车/还车计算流量。对各站的流量规模和时段方向分布标准化后，用 K-means 划分四组。官方 GBFS 清单只用于连接站点 ID。历史不足或无法匹配的站点沿用全城模型。每组至少有 500 个训练样本且覆盖 5 个训练站点才单独拟合 Ridge。
 
 ```bash
-python flow_type_experiment.py --trips 2607.csv 2608.csv \
+python flow_type_experiment.py --trips ../2607.csv ../2608.csv \
   --station-information /tmp/bluebikes-station-information.json \
   --db data/citybikes-202609-10.sqlite \
   --model artifacts/citybikes-optional-lags-15.joblib \
@@ -331,7 +341,7 @@ python evaluate_return_guards.py --classifier artifacts/citybikes-logistic-time-
 
 ## 仓库内容与原始数据下载
 
-仓库包含代码、Notebook、评估报告、PPT、Word 和已训练的模型。原始行程及真实站点数据库保存在本地，可按照上文的采集和导入命令重建。请从官方下载以下行程文件，将 ZIP 解压后按表中的名称保存。
+仓库包含代码、Notebook、评估报告、PPT、Word 和已训练的模型。原始行程及真实站点数据库保存在本地，可按照上文的采集和导入命令重建。请从官方下载以下行程文件，将 ZIP 解压后按表中的名称保存到仓库根目录。
 
 | 本地文件 | 官方下载 |
 | --- | --- |

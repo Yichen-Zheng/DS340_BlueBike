@@ -8,6 +8,10 @@ import time
 from pathlib import Path
 from urllib.request import urlopen
 
+FORECASTING_DIR = Path(__file__).resolve().parent
+DEFAULT_TRIP_FILES = tuple(FORECASTING_DIR.parent / name for name in ("2607.csv", "2608.csv"))
+DEFAULT_STATUS_DB = FORECASTING_DIR / "data" / "status.sqlite"
+
 DISCOVERY = "https://gbfs.bluebikes.com/gbfs/gbfs.json"
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS station_status (
@@ -100,7 +104,7 @@ def snapshot(db, discovery=DISCOVERY):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--db", default="data/status.sqlite")
+    parser.add_argument("--db", default=DEFAULT_STATUS_DB, type=Path)
     parser.add_argument("--interval", type=int, default=60)
     parser.add_argument("--once", action="store_true")
     args = parser.parse_args()

@@ -25,7 +25,7 @@ from dock_regression import (
     store_identity,
     store_uri,
 )
-from collect_status import station_map
+from collect_status import DEFAULT_TRIP_FILES, station_map
 
 
 def traffic_groups(paths):
@@ -101,7 +101,7 @@ def traffic_groups(paths):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--trips", nargs=2, required=True, type=Path)
+    parser.add_argument("--trips", nargs=2, default=DEFAULT_TRIP_FILES, type=Path)
     parser.add_argument("--station-information", required=True, type=Path)
     parser.add_argument("--model", required=True, type=Path)
     parser.add_argument("--db", required=True, type=Path)
