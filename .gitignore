@@ -1,3 +1,8 @@
 
+/2607.csv
 /2608.csv
 /2609.csv
+/data/
+/artifacts/
+__pycache__/
+.DS_Store

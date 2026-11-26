@@ -1,0 +1,173 @@
+{
+  "data_kind": "real",
+  "training_data_source": "citybikes",
+  "horizon_minutes": 15,
+  "feature_version": 1,
+  "features": [
+    "station_id",
+    "available_docks",
+    "lag_5",
+    "lag_15",
+    "lag_30",
+    "change_5",
+    "hour_sin",
+    "hour_cos",
+    "weekday",
+    "weekend",
+    "capacity",
+    "latitude",
+    "longitude"
+  ],
+  "timing_seconds": {
+    "target_tolerance": 90,
+    "lag_tolerance": 120,
+    "max_gap": 180,
+    "max_age": 300
+  },
+  "sklearn_version": "1.4.2",
+  "training_base_range": [
+    "2026-09-01T22:42:17+00:00",
+    "2026-09-09T22:17:15+00:00"
+  ],
+  "training_label_range": [
+    "2026-09-01T22:57:16+00:00",
+    "2026-09-09T22:31:15+00:00"
+  ],
+  "validation_starts": "2026-09-10T04:00:00+00:00",
+  "test_starts": "2026-09-14T04:00:00+00:00",
+  "test_ends_exclusive": "2026-09-28T04:00:00+00:00",
+  "test_stations": 10,
+  "training_rows": 384,
+  "ridge_alpha": 100.0,
+  "validation": {
+    "persistence": {
+      "all": {
+        "n": 259,
+        "mae": 4.250965250965251,
+        "rmse": 5.836577513032536
+      },
+      "actual_0_to_2": {
+        "n": 54,
+        "mae": 4.648148148148148,
+        "rmse": 6.665277633071703
+      },
+      "actual_full": 14,
+      "actual_full_predicted_at_least_one": 14,
+      "actual_at_least_one_predicted_below_one": 5
+    },
+    "regression": {
+      "all": {
+        "n": 259,
+        "mae": 5.343463782069655,
+        "rmse": 7.406990078932746
+      },
+      "actual_0_to_2": {
+        "n": 54,
+        "mae": 5.702826788495933,
+        "rmse": 7.307384153955232
+      },
+      "actual_full": 14,
+      "actual_full_predicted_at_least_one": 14,
+      "actual_at_least_one_predicted_below_one": 3
+    }
+  },
+  "test": {
+    "persistence": {
+      "all": {
+        "n": 755,
+        "mae": 3.5443708609271525,
+        "rmse": 4.604345773288535
+      },
+      "actual_0_to_2": {
+        "n": 61,
+        "mae": 4.901639344262295,
+        "rmse": 6.152435210255646
+      },
+      "actual_full": 20,
+      "actual_full_predicted_at_least_one": 16,
+      "actual_at_least_one_predicted_below_one": 10
+    },
+    "regression": {
+      "all": {
+        "n": 755,
+        "mae": 3.5370700223121094,
+        "rmse": 4.59771563788423
+      },
+      "actual_0_to_2": {
+        "n": 61,
+        "mae": 5.308911080721657,
+        "rmse": 5.719880987527693
+      },
+      "actual_full": 20,
+      "actual_full_predicted_at_least_one": 20,
+      "actual_at_least_one_predicted_below_one": 2
+    }
+  },
+  "test_by_week": {
+    "2026-09-14": {
+      "persistence": {
+        "all": {
+          "n": 428,
+          "mae": 4.079439252336448,
+          "rmse": 5.104057392815923
+        },
+        "actual_0_to_2": {
+          "n": 33,
+          "mae": 6.515151515151516,
+          "rmse": 7.54983443527075
+        },
+        "actual_full": 10,
+        "actual_full_predicted_at_least_one": 10,
+        "actual_at_least_one_predicted_below_one": 6
+      },
+      "regression": {
+        "all": {
+          "n": 428,
+          "mae": 3.6324651279635773,
+          "rmse": 4.847122316420157
+        },
+        "actual_0_to_2": {
+          "n": 33,
+          "mae": 5.345218866121706,
+          "rmse": 5.8389024305265265
+        },
+        "actual_full": 10,
+        "actual_full_predicted_at_least_one": 10,
+        "actual_at_least_one_predicted_below_one": 0
+      }
+    },
+    "2026-09-21": {
+      "persistence": {
+        "all": {
+          "n": 327,
+          "mae": 2.8440366972477062,
+          "rmse": 3.853589612971103
+        },
+        "actual_0_to_2": {
+          "n": 28,
+          "mae": 3.0,
+          "rmse": 3.909694909544003
+        },
+        "actual_full": 10,
+        "actual_full_predicted_at_least_one": 6,
+        "actual_at_least_one_predicted_below_one": 4
+      },
+      "regression": {
+        "all": {
+          "n": 327,
+          "mae": 3.4122103733248665,
+          "rmse": 4.249212989704754
+        },
+        "actual_0_to_2": {
+          "n": 28,
+          "mae": 5.266119762214457,
+          "rmse": 5.57634531053284
+        },
+        "actual_full": 10,
+        "actual_full_predicted_at_least_one": 10,
+        "actual_at_least_one_predicted_below_one": 2
+      }
+    }
+  },
+  "model_version": "real-docks-v1-f270cbd983cb"
+}

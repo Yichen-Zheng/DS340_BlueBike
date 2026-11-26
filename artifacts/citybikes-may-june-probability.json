@@ -1,0 +1,373 @@
+{
+  "model_type": "dock_probability_calibration_v1",
+  "classifier_version": "logistic-docks-v1-11bef2b5aa89",
+  "calibration_range": [
+    "2026-04-08T04:00:00+00:00",
+    "2026-05-01T04:00:00+00:00"
+  ],
+  "calibration_samples": 6976,
+  "calibration_stations": 96,
+  "calibration_actual_full": 246,
+  "sigmoid_slope": 0.07107732462490673,
+  "sigmoid_intercept": 2.9003293207768315,
+  "base_rate": 0.9646696287802781,
+  "current_dock_bin_edges": [
+    1,
+    3,
+    6
+  ],
+  "current_dock_bin_rates": [
+    0.8805555555555555,
+    0.9114420062695925,
+    0.9305150631681244,
+    0.9808104422365088
+  ],
+  "test": {
+    "range": [
+      "2026-05-01T04:00:00+00:00",
+      "2026-07-01T00:00:00+00:00"
+    ],
+    "stations": 111,
+    "groups": {
+      "all": {
+        "calibrated_logistic": {
+          "samples": 19879,
+          "actual_full": 667,
+          "mean_prediction": 0.9657692274218457,
+          "observed_availability": 0.9664470043764777,
+          "brier": 0.03215022743756597,
+          "log_loss": 0.1429497305168134,
+          "calibration_gap": -0.0006777769546320034,
+          "ece": 0.002389493611178891,
+          "reliability": [
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 2,
+              "mean_prediction": 0.8818882991974695,
+              "observed_availability": 1.0
+            },
+            {
+              "range": [
+                0.9,
+                0.95
+              ],
+              "samples": 2369,
+              "mean_prediction": 0.941242854070836,
+              "observed_availability": 0.935415787252005
+            },
+            {
+              "range": [
+                0.95,
+                0.98
+              ],
+              "samples": 15168,
+              "mean_prediction": 0.9666513177613523,
+              "observed_availability": 0.9681566455696202
+            },
+            {
+              "range": [
+                0.98,
+                0.99
+              ],
+              "samples": 2104,
+              "mean_prediction": 0.9841168725325746,
+              "observed_availability": 0.9876425855513308
+            },
+            {
+              "range": [
+                0.99,
+                1.0
+              ],
+              "samples": 236,
+              "mean_prediction": 0.9924122305675354,
+              "observed_availability": 0.9788135593220338
+            }
+          ]
+        },
+        "calibration_base_rate": {
+          "samples": 19879,
+          "actual_full": 667,
+          "mean_prediction": 0.9646696287802782,
+          "observed_availability": 0.9664470043764777,
+          "brier": 0.03243035117222016,
+          "log_loss": 0.14693077978622904,
+          "calibration_gap": -0.0017773755961995041,
+          "ece": 0.0017773755961995041,
+          "reliability": [
+            {
+              "range": [
+                0.95,
+                0.98
+              ],
+              "samples": 19879,
+              "mean_prediction": 0.9646696287802782,
+              "observed_availability": 0.9664470043764777
+            }
+          ]
+        },
+        "current_dock_bin": {
+          "samples": 19879,
+          "actual_full": 667,
+          "mean_prediction": 0.9645806930040751,
+          "observed_availability": 0.9664470043764777,
+          "brier": 0.03131203331363718,
+          "log_loss": 0.1335982470262956,
+          "calibration_gap": -0.0018663113724025626,
+          "ece": 0.004553249746573491,
+          "reliability": [
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 369,
+              "mean_prediction": 0.8805555555555554,
+              "observed_availability": 0.8265582655826558
+            },
+            {
+              "range": [
+                0.9,
+                0.95
+              ],
+              "samples": 5033,
+              "mean_prediction": 0.924057584734765,
+              "observed_availability": 0.9227101132525333
+            },
+            {
+              "range": [
+                0.98,
+                0.99
+              ],
+              "samples": 14477,
+              "mean_prediction": 0.9808104422365088,
+              "observed_availability": 0.9852179318919666
+            }
+          ]
+        }
+      },
+      "late_peak_16_to_20": {
+        "calibrated_logistic": {
+          "samples": 10529,
+          "actual_full": 390,
+          "mean_prediction": 0.9642243051884027,
+          "observed_availability": 0.962959445341438,
+          "brier": 0.035496036199718035,
+          "log_loss": 0.15623544010403184,
+          "calibration_gap": 0.0012648598469647832,
+          "ece": 0.0013207626068215794,
+          "reliability": [
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 2,
+              "mean_prediction": 0.8818882991974695,
+              "observed_availability": 1.0
+            },
+            {
+              "range": [
+                0.9,
+                0.95
+              ],
+              "samples": 1477,
+              "mean_prediction": 0.9410574971715229,
+              "observed_availability": 0.9410968178740691
+            },
+            {
+              "range": [
+                0.95,
+                0.98
+              ],
+              "samples": 7974,
+              "mean_prediction": 0.9657026331762457,
+              "observed_availability": 0.9648858791070981
+            },
+            {
+              "range": [
+                0.98,
+                0.99
+              ],
+              "samples": 952,
+              "mean_prediction": 0.9842277373747661,
+              "observed_availability": 0.9800420168067226
+            },
+            {
+              "range": [
+                0.99,
+                1.0
+              ],
+              "samples": 124,
+              "mean_prediction": 0.9928581167725664,
+              "observed_availability": 0.967741935483871
+            }
+          ]
+        },
+        "calibration_base_rate": {
+          "samples": 10529,
+          "actual_full": 390,
+          "mean_prediction": 0.9646696287802782,
+          "observed_availability": 0.962959445341438,
+          "brier": 0.035671476696542616,
+          "log_loss": 0.1584642865057249,
+          "calibration_gap": 0.0017101834388402182,
+          "ece": 0.001710183438840218,
+          "reliability": [
+            {
+              "range": [
+                0.95,
+                0.98
+              ],
+              "samples": 10529,
+              "mean_prediction": 0.9646696287802782,
+              "observed_availability": 0.962959445341438
+            }
+          ]
+        },
+        "current_dock_bin": {
+          "samples": 10529,
+          "actual_full": 390,
+          "mean_prediction": 0.9645898951642098,
+          "observed_availability": 0.962959445341438,
+          "brier": 0.034219178500106764,
+          "log_loss": 0.14157750398391247,
+          "calibration_gap": 0.001630449822771829,
+          "ece": 0.009208362574833066,
+          "reliability": [
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 224,
+              "mean_prediction": 0.8805555555555556,
+              "observed_availability": 0.8348214285714286
+            },
+            {
+              "range": [
+                0.9,
+                0.95
+              ],
+              "samples": 2598,
+              "mean_prediction": 0.9237168912327738,
+              "observed_availability": 0.9056966897613549
+            },
+            {
+              "range": [
+                0.98,
+                0.99
+              ],
+              "samples": 7707,
+              "mean_prediction": 0.9808104422365088,
+              "observed_availability": 0.9859867652783184
+            }
+          ]
+        }
+      },
+      "current_0_to_2_docks": {
+        "calibrated_logistic": {
+          "samples": 2073,
+          "actual_full": 248,
+          "mean_prediction": 0.9548038961406468,
+          "observed_availability": 0.8803666184273999,
+          "brier": 0.11090702916121342,
+          "log_loss": 0.4151585939753296,
+          "calibration_gap": 0.07443727771324682,
+          "ece": 0.07455005003334923,
+          "reliability": [
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 1,
+              "mean_prediction": 0.8831114902140299,
+              "observed_availability": 1.0
+            },
+            {
+              "range": [
+                0.9,
+                0.95
+              ],
+              "samples": 629,
+              "mean_prediction": 0.9386490519786418,
+              "observed_availability": 0.8680445151033387
+            },
+            {
+              "range": [
+                0.95,
+                0.98
+              ],
+              "samples": 1412,
+              "mean_prediction": 0.9614441752744884,
+              "observed_availability": 0.8852691218130312
+            },
+            {
+              "range": [
+                0.98,
+                0.99
+              ],
+              "samples": 31,
+              "mean_prediction": 0.9824495492646348,
+              "observed_availability": 0.9032258064516129
+            }
+          ]
+        },
+        "calibration_base_rate": {
+          "samples": 2073,
+          "actual_full": 248,
+          "mean_prediction": 0.9646696287802782,
+          "observed_availability": 0.8803666184273999,
+          "brier": 0.11242823314066225,
+          "log_loss": 0.4316022935256861,
+          "calibration_gap": 0.08430301035287824,
+          "ece": 0.08430301035287824,
+          "reliability": [
+            {
+              "range": [
+                0.95,
+                0.98
+              ],
+              "samples": 2073,
+              "mean_prediction": 0.9646696287802782,
+              "observed_availability": 0.8803666184273999
+            }
+          ]
+        },
+        "current_dock_bin": {
+          "samples": 2073,
+          "actual_full": 248,
+          "mean_prediction": 0.9059441286461096,
+          "observed_availability": 0.8803666184273999,
+          "brier": 0.1055233644048565,
+          "log_loss": 0.3674722716789084,
+          "calibration_gap": 0.025577510218709687,
+          "ece": 0.025577510218709604,
+          "reliability": [
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 369,
+              "mean_prediction": 0.8805555555555554,
+              "observed_availability": 0.8265582655826558
+            },
+            {
+              "range": [
+                0.9,
+                0.95
+              ],
+              "samples": 1704,
+              "mean_prediction": 0.9114420062695922,
+              "observed_availability": 0.892018779342723
+            }
+          ]
+        }
+      }
+    }
+  }
+}

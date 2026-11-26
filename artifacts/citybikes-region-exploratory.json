@@ -1,0 +1,376 @@
+{
+  "minimum_training_observations": 500,
+  "minimum_training_stations": 5,
+  "validation_starts": "2026-10-05T04:00:00+00:00",
+  "validation_ends": "2026-10-19T04:00:00+00:00",
+  "regions": {
+    "Boston": {
+      "training_samples": 12844,
+      "training_stations": 165,
+      "validation_stations": 108,
+      "uses_regional_model": true,
+      "persistence": {
+        "all": {
+          "n": 3979,
+          "mae": 3.3360140738879114,
+          "rmse": 4.396987705192953
+        },
+        "near_full": {
+          "n": 496,
+          "mae": 3.403225806451613,
+          "rmse": 4.616327963973935
+        },
+        "actual_full": 128,
+        "false_open_at_one": 114
+      },
+      "global": {
+        "all": {
+          "n": 3979,
+          "mae": 3.129589712837901,
+          "rmse": 4.077775430276747
+        },
+        "near_full": {
+          "n": 496,
+          "mae": 4.021305234167926,
+          "rmse": 4.860777648284373
+        },
+        "actual_full": 128,
+        "false_open_at_one": 123
+      },
+      "regional_or_global_fallback": {
+        "all": {
+          "n": 3979,
+          "mae": 3.1448398856288176,
+          "rmse": 4.075615907884885
+        },
+        "near_full": {
+          "n": 496,
+          "mae": 4.15239345389582,
+          "rmse": 4.951050992398587
+        },
+        "actual_full": 128,
+        "false_open_at_one": 121
+      },
+      "half_blend": {
+        "all": {
+          "n": 3979,
+          "mae": 3.1325413597293834,
+          "rmse": 4.070443332911076
+        },
+        "near_full": {
+          "n": 496,
+          "mae": 4.086070359868319,
+          "rmse": 4.902998939967042
+        },
+        "actual_full": 128,
+        "false_open_at_one": 123
+      }
+    },
+    "Brookline": {
+      "training_samples": 63,
+      "training_stations": 7,
+      "validation_stations": 4,
+      "uses_regional_model": false,
+      "persistence": {
+        "all": {
+          "n": 17,
+          "mae": 3.8823529411764706,
+          "rmse": 4.6017899330842225
+        },
+        "near_full": {
+          "n": 0,
+          "mae": null,
+          "rmse": null
+        },
+        "actual_full": 0,
+        "false_open_at_one": 0
+      },
+      "global": {
+        "all": {
+          "n": 17,
+          "mae": 4.745212426243885,
+          "rmse": 5.460225688868571
+        },
+        "near_full": {
+          "n": 0,
+          "mae": null,
+          "rmse": null
+        },
+        "actual_full": 0,
+        "false_open_at_one": 0
+      },
+      "regional_or_global_fallback": {
+        "all": {
+          "n": 17,
+          "mae": 4.745212426243885,
+          "rmse": 5.460225688868571
+        },
+        "near_full": {
+          "n": 0,
+          "mae": null,
+          "rmse": null
+        },
+        "actual_full": 0,
+        "false_open_at_one": 0
+      },
+      "half_blend": {
+        "all": {
+          "n": 17,
+          "mae": 4.745212426243885,
+          "rmse": 5.460225688868571
+        },
+        "near_full": {
+          "n": 0,
+          "mae": null,
+          "rmse": null
+        },
+        "actual_full": 0,
+        "false_open_at_one": 0
+      }
+    },
+    "Cambridge": {
+      "training_samples": 16943,
+      "training_stations": 73,
+      "validation_stations": 60,
+      "uses_regional_model": true,
+      "persistence": {
+        "all": {
+          "n": 6115,
+          "mae": 3.636631234668847,
+          "rmse": 4.7723995243431725
+        },
+        "near_full": {
+          "n": 687,
+          "mae": 4.094614264919942,
+          "rmse": 5.6342940362350635
+        },
+        "actual_full": 194,
+        "false_open_at_one": 180
+      },
+      "global": {
+        "all": {
+          "n": 6115,
+          "mae": 3.586025425051935,
+          "rmse": 4.595101841108022
+        },
+        "near_full": {
+          "n": 687,
+          "mae": 5.0757305883984225,
+          "rmse": 6.07568791640834
+        },
+        "actual_full": 194,
+        "false_open_at_one": 194
+      },
+      "regional_or_global_fallback": {
+        "all": {
+          "n": 6115,
+          "mae": 3.5859374130805097,
+          "rmse": 4.591248341768538
+        },
+        "near_full": {
+          "n": 687,
+          "mae": 4.957943790821842,
+          "rmse": 5.978122993024379
+        },
+        "actual_full": 194,
+        "false_open_at_one": 194
+      },
+      "half_blend": {
+        "all": {
+          "n": 6115,
+          "mae": 3.5839951262212733,
+          "rmse": 4.590848253256574
+        },
+        "near_full": {
+          "n": 687,
+          "mae": 5.016639391407258,
+          "rmse": 6.025290498986267
+        },
+        "actual_full": 194,
+        "false_open_at_one": 194
+      }
+    },
+    "Somerville": {
+      "training_samples": 273,
+      "training_stations": 12,
+      "validation_stations": 8,
+      "uses_regional_model": false,
+      "persistence": {
+        "all": {
+          "n": 111,
+          "mae": 3.234234234234234,
+          "rmse": 4.068113758186901
+        },
+        "near_full": {
+          "n": 6,
+          "mae": 2.5,
+          "rmse": 3.8078865529319543
+        },
+        "actual_full": 0,
+        "false_open_at_one": 0
+      },
+      "global": {
+        "all": {
+          "n": 111,
+          "mae": 3.292036328974295,
+          "rmse": 3.9793169674970548
+        },
+        "near_full": {
+          "n": 6,
+          "mae": 4.201386437190355,
+          "rmse": 4.6100317512515945
+        },
+        "actual_full": 0,
+        "false_open_at_one": 0
+      },
+      "regional_or_global_fallback": {
+        "all": {
+          "n": 111,
+          "mae": 3.292036328974295,
+          "rmse": 3.9793169674970548
+        },
+        "near_full": {
+          "n": 6,
+          "mae": 4.201386437190355,
+          "rmse": 4.6100317512515945
+        },
+        "actual_full": 0,
+        "false_open_at_one": 0
+      },
+      "half_blend": {
+        "all": {
+          "n": 111,
+          "mae": 3.292036328974295,
+          "rmse": 3.9793169674970548
+        },
+        "near_full": {
+          "n": 6,
+          "mae": 4.201386437190355,
+          "rmse": 4.6100317512515945
+        },
+        "actual_full": 0,
+        "false_open_at_one": 0
+      }
+    },
+    "Unmapped": {
+      "training_samples": 865,
+      "training_stations": 14,
+      "validation_stations": 11,
+      "uses_regional_model": false,
+      "persistence": {
+        "all": {
+          "n": 186,
+          "mae": 3.8440860215053765,
+          "rmse": 4.693280486017228
+        },
+        "near_full": {
+          "n": 43,
+          "mae": 4.27906976744186,
+          "rmse": 4.836873870301902
+        },
+        "actual_full": 16,
+        "false_open_at_one": 16
+      },
+      "global": {
+        "all": {
+          "n": 186,
+          "mae": 4.043989815298603,
+          "rmse": 5.094995060784462
+        },
+        "near_full": {
+          "n": 43,
+          "mae": 5.029553689953689,
+          "rmse": 5.625619186720949
+        },
+        "actual_full": 16,
+        "false_open_at_one": 13
+      },
+      "regional_or_global_fallback": {
+        "all": {
+          "n": 186,
+          "mae": 4.043989815298603,
+          "rmse": 5.094995060784462
+        },
+        "near_full": {
+          "n": 43,
+          "mae": 5.029553689953689,
+          "rmse": 5.625619186720949
+        },
+        "actual_full": 16,
+        "false_open_at_one": 13
+      },
+      "half_blend": {
+        "all": {
+          "n": 186,
+          "mae": 4.043989815298603,
+          "rmse": 5.094995060784462
+        },
+        "near_full": {
+          "n": 43,
+          "mae": 5.029553689953689,
+          "rmse": 5.625619186720949
+        },
+        "actual_full": 16,
+        "false_open_at_one": 13
+      }
+    }
+  },
+  "combined": {
+    "persistence": {
+      "all": {
+        "n": 10408,
+        "mae": 3.52152190622598,
+        "rmse": 4.623570265332054
+      },
+      "near_full": {
+        "n": 1232,
+        "mae": 3.814935064935065,
+        "rmse": 5.212372892342907
+      },
+      "actual_full": 338,
+      "false_open_at_one": 310
+    },
+    "global": {
+      "all": {
+        "n": 10408,
+        "mae": 3.4184713384879344,
+        "rmse": 4.4095519000875445
+      },
+      "near_full": {
+        "n": 1232,
+        "mae": 4.6453518162890886,
+        "rmse": 5.595056563143152
+      },
+      "actual_full": 338,
+      "false_open_at_one": 330
+    },
+    "regional_or_global_fallback": {
+      "all": {
+        "n": 10408,
+        "mae": 3.4242498016249248,
+        "rmse": 4.406429202885875
+      },
+      "near_full": {
+        "n": 1232,
+        "mae": 4.632446156427015,
+        "rmse": 5.568255403907001
+      },
+      "actual_full": 338,
+      "false_open_at_one": 328
+    },
+    "half_blend": {
+      "all": {
+        "n": 10408,
+        "mae": 3.41840690013587,
+        "rmse": 4.404355937555078
+      },
+      "near_full": {
+        "n": 1232,
+        "mae": 4.6384750711709595,
+        "rmse": 5.579475721675764
+      },
+      "actual_full": 338,
+      "false_open_at_one": 330
+    }
+  }
+}

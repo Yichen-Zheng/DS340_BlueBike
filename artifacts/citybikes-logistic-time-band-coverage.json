@@ -1,0 +1,599 @@
+{
+  "start": "2026-10-19T04:00:00+00:00",
+  "end_exclusive": "2026-10-26T04:00:00+00:00",
+  "requested_coverage": [
+    0.8,
+    0.9
+  ],
+  "samples": 5057,
+  "stations": 144,
+  "actual_full": 127,
+  "actual_close_to_full": 498,
+  "methods": {
+    "persistence": {
+      "equal_coverage": [
+        {
+          "selected": 4045,
+          "actual_full_selected": 38,
+          "actual_open_not_selected": 923
+        },
+        {
+          "selected": 4551,
+          "actual_full_selected": 72,
+          "actual_open_not_selected": 451
+        }
+      ],
+      "all": {
+        "n": 5057,
+        "mae": 3.7277041724342497,
+        "rmse": 4.885985009752183
+      },
+      "actual_0_to_2": {
+        "n": 498,
+        "mae": 3.8132530120481927,
+        "rmse": 5.350937312329675
+      }
+    },
+    "direct_regression": {
+      "equal_coverage": [
+        {
+          "selected": 4045,
+          "actual_full_selected": 44,
+          "actual_open_not_selected": 929
+        },
+        {
+          "selected": 4551,
+          "actual_full_selected": 67,
+          "actual_open_not_selected": 446
+        }
+      ],
+      "all": {
+        "n": 5057,
+        "mae": 3.634910737961491,
+        "rmse": 4.6486951050205985
+      },
+      "actual_0_to_2": {
+        "n": 498,
+        "mae": 4.6329251607247075,
+        "rmse": 5.608927819187456
+      }
+    },
+    "change_regression": {
+      "equal_coverage": [
+        {
+          "selected": 4045,
+          "actual_full_selected": 44,
+          "actual_open_not_selected": 929
+        },
+        {
+          "selected": 4551,
+          "actual_full_selected": 70,
+          "actual_open_not_selected": 449
+        }
+      ],
+      "all": {
+        "n": 5057,
+        "mae": 3.6152444069201977,
+        "rmse": 4.62955412190197
+      },
+      "actual_0_to_2": {
+        "n": 498,
+        "mae": 4.542253341471104,
+        "rmse": 5.566670946859529
+      }
+    },
+    "logistic": {
+      "equal_coverage": [
+        {
+          "selected": 4045,
+          "actual_full_selected": 52,
+          "actual_open_not_selected": 937
+        },
+        {
+          "selected": 4551,
+          "actual_full_selected": 75,
+          "actual_open_not_selected": 454
+        }
+      ]
+    }
+  },
+  "time_zone": "America/New_York",
+  "hourly_samples": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    18,
+    111,
+    229,
+    662,
+    401,
+    170,
+    111,
+    156,
+    179,
+    226,
+    310,
+    571,
+    1062,
+    449,
+    300,
+    58,
+    21,
+    19,
+    4
+  ],
+  "by_time_of_day": {
+    "00:00\u201306:00": {
+      "samples": 18,
+      "stations": 1,
+      "actual_full": 0,
+      "actual_close_to_full": 0,
+      "methods": {
+        "persistence": {
+          "equal_coverage": [
+            {
+              "selected": 14,
+              "actual_full_selected": 0,
+              "actual_open_not_selected": 4
+            },
+            {
+              "selected": 16,
+              "actual_full_selected": 0,
+              "actual_open_not_selected": 2
+            }
+          ],
+          "all": {
+            "n": 18,
+            "mae": 4.333333333333333,
+            "rmse": 5.0990195135927845
+          },
+          "actual_0_to_2": {
+            "n": 0,
+            "mae": null,
+            "rmse": null
+          }
+        },
+        "direct_regression": {
+          "equal_coverage": [
+            {
+              "selected": 14,
+              "actual_full_selected": 0,
+              "actual_open_not_selected": 4
+            },
+            {
+              "selected": 16,
+              "actual_full_selected": 0,
+              "actual_open_not_selected": 2
+            }
+          ],
+          "all": {
+            "n": 18,
+            "mae": 3.703860315774727,
+            "rmse": 4.265148983551658
+          },
+          "actual_0_to_2": {
+            "n": 0,
+            "mae": null,
+            "rmse": null
+          }
+        },
+        "change_regression": {
+          "equal_coverage": [
+            {
+              "selected": 14,
+              "actual_full_selected": 0,
+              "actual_open_not_selected": 4
+            },
+            {
+              "selected": 16,
+              "actual_full_selected": 0,
+              "actual_open_not_selected": 2
+            }
+          ],
+          "all": {
+            "n": 18,
+            "mae": 3.6384916372807843,
+            "rmse": 4.198222574905516
+          },
+          "actual_0_to_2": {
+            "n": 0,
+            "mae": null,
+            "rmse": null
+          }
+        },
+        "logistic": {
+          "equal_coverage": [
+            {
+              "selected": 14,
+              "actual_full_selected": 0,
+              "actual_open_not_selected": 4
+            },
+            {
+              "selected": 16,
+              "actual_full_selected": 0,
+              "actual_open_not_selected": 2
+            }
+          ]
+        }
+      }
+    },
+    "06:00\u201310:00": {
+      "samples": 1403,
+      "stations": 86,
+      "actual_full": 34,
+      "actual_close_to_full": 111,
+      "methods": {
+        "persistence": {
+          "equal_coverage": [
+            {
+              "selected": 1122,
+              "actual_full_selected": 16,
+              "actual_open_not_selected": 263
+            },
+            {
+              "selected": 1262,
+              "actual_full_selected": 20,
+              "actual_open_not_selected": 127
+            }
+          ],
+          "all": {
+            "n": 1403,
+            "mae": 4.536707056307912,
+            "rmse": 5.715205862175225
+          },
+          "actual_0_to_2": {
+            "n": 111,
+            "mae": 6.4774774774774775,
+            "rmse": 7.888296725226887
+          }
+        },
+        "direct_regression": {
+          "equal_coverage": [
+            {
+              "selected": 1122,
+              "actual_full_selected": 16,
+              "actual_open_not_selected": 263
+            },
+            {
+              "selected": 1262,
+              "actual_full_selected": 20,
+              "actual_open_not_selected": 127
+            }
+          ],
+          "all": {
+            "n": 1403,
+            "mae": 4.176184104262925,
+            "rmse": 5.259241491196331
+          },
+          "actual_0_to_2": {
+            "n": 111,
+            "mae": 6.511375125751915,
+            "rmse": 7.63481355288093
+          }
+        },
+        "change_regression": {
+          "equal_coverage": [
+            {
+              "selected": 1122,
+              "actual_full_selected": 16,
+              "actual_open_not_selected": 263
+            },
+            {
+              "selected": 1262,
+              "actual_full_selected": 20,
+              "actual_open_not_selected": 127
+            }
+          ],
+          "all": {
+            "n": 1403,
+            "mae": 4.162792852763039,
+            "rmse": 5.259196402056512
+          },
+          "actual_0_to_2": {
+            "n": 111,
+            "mae": 6.434046254668948,
+            "rmse": 7.597735109697689
+          }
+        },
+        "logistic": {
+          "equal_coverage": [
+            {
+              "selected": 1122,
+              "actual_full_selected": 16,
+              "actual_open_not_selected": 263
+            },
+            {
+              "selected": 1262,
+              "actual_full_selected": 23,
+              "actual_open_not_selected": 130
+            }
+          ]
+        }
+      }
+    },
+    "10:00\u201316:00": {
+      "samples": 1152,
+      "stations": 63,
+      "actual_full": 39,
+      "actual_close_to_full": 166,
+      "methods": {
+        "persistence": {
+          "equal_coverage": [
+            {
+              "selected": 921,
+              "actual_full_selected": 20,
+              "actual_open_not_selected": 212
+            },
+            {
+              "selected": 1036,
+              "actual_full_selected": 30,
+              "actual_open_not_selected": 107
+            }
+          ],
+          "all": {
+            "n": 1152,
+            "mae": 3.4175347222222223,
+            "rmse": 4.435200891103405
+          },
+          "actual_0_to_2": {
+            "n": 166,
+            "mae": 3.3433734939759034,
+            "rmse": 4.482227286269978
+          }
+        },
+        "direct_regression": {
+          "equal_coverage": [
+            {
+              "selected": 921,
+              "actual_full_selected": 23,
+              "actual_open_not_selected": 215
+            },
+            {
+              "selected": 1036,
+              "actual_full_selected": 29,
+              "actual_open_not_selected": 106
+            }
+          ],
+          "all": {
+            "n": 1152,
+            "mae": 3.516308294466788,
+            "rmse": 4.409652149026335
+          },
+          "actual_0_to_2": {
+            "n": 166,
+            "mae": 4.307447434110921,
+            "rmse": 5.047329215439226
+          }
+        },
+        "change_regression": {
+          "equal_coverage": [
+            {
+              "selected": 921,
+              "actual_full_selected": 23,
+              "actual_open_not_selected": 215
+            },
+            {
+              "selected": 1036,
+              "actual_full_selected": 29,
+              "actual_open_not_selected": 106
+            }
+          ],
+          "all": {
+            "n": 1152,
+            "mae": 3.471639999670712,
+            "rmse": 4.375827262353222
+          },
+          "actual_0_to_2": {
+            "n": 166,
+            "mae": 4.207038297498912,
+            "rmse": 4.969662863178175
+          }
+        },
+        "logistic": {
+          "equal_coverage": [
+            {
+              "selected": 921,
+              "actual_full_selected": 24,
+              "actual_open_not_selected": 216
+            },
+            {
+              "selected": 1036,
+              "actual_full_selected": 32,
+              "actual_open_not_selected": 109
+            }
+          ]
+        }
+      }
+    },
+    "16:00\u201320:00": {
+      "samples": 2382,
+      "stations": 111,
+      "actual_full": 51,
+      "actual_close_to_full": 210,
+      "methods": {
+        "persistence": {
+          "equal_coverage": [
+            {
+              "selected": 1905,
+              "actual_full_selected": 6,
+              "actual_open_not_selected": 432
+            },
+            {
+              "selected": 2143,
+              "actual_full_selected": 21,
+              "actual_open_not_selected": 209
+            }
+          ],
+          "all": {
+            "n": 2382,
+            "mae": 3.355583543240974,
+            "rmse": 4.425946321367958
+          },
+          "actual_0_to_2": {
+            "n": 210,
+            "mae": 2.914285714285714,
+            "rmse": 4.359991262551315
+          }
+        },
+        "direct_regression": {
+          "equal_coverage": [
+            {
+              "selected": 1905,
+              "actual_full_selected": 6,
+              "actual_open_not_selected": 432
+            },
+            {
+              "selected": 2143,
+              "actual_full_selected": 19,
+              "actual_open_not_selected": 207
+            }
+          ],
+          "all": {
+            "n": 2382,
+            "mae": 3.333027324092577,
+            "rmse": 4.243667649547553
+          },
+          "actual_0_to_2": {
+            "n": 210,
+            "mae": 4.0212609393906975,
+            "rmse": 4.8257871402677885
+          }
+        },
+        "change_regression": {
+          "equal_coverage": [
+            {
+              "selected": 1905,
+              "actual_full_selected": 7,
+              "actual_open_not_selected": 433
+            },
+            {
+              "selected": 2143,
+              "actual_full_selected": 18,
+              "actual_open_not_selected": 206
+            }
+          ],
+          "all": {
+            "n": 2382,
+            "mae": 3.327430724654464,
+            "rmse": 4.234710760724444
+          },
+          "actual_0_to_2": {
+            "n": 210,
+            "mae": 3.93351195888389,
+            "rmse": 4.806491135742938
+          }
+        },
+        "logistic": {
+          "equal_coverage": [
+            {
+              "selected": 1905,
+              "actual_full_selected": 17,
+              "actual_open_not_selected": 443
+            },
+            {
+              "selected": 2143,
+              "actual_full_selected": 22,
+              "actual_open_not_selected": 210
+            }
+          ]
+        }
+      }
+    },
+    "20:00\u201324:00": {
+      "samples": 102,
+      "stations": 26,
+      "actual_full": 3,
+      "actual_close_to_full": 11,
+      "methods": {
+        "persistence": {
+          "equal_coverage": [
+            {
+              "selected": 81,
+              "actual_full_selected": 0,
+              "actual_open_not_selected": 18
+            },
+            {
+              "selected": 91,
+              "actual_full_selected": 2,
+              "actual_open_not_selected": 10
+            }
+          ],
+          "all": {
+            "n": 102,
+            "mae": 4.686274509803922,
+            "rmse": 7.0766115742316265
+          },
+          "actual_0_to_2": {
+            "n": 11,
+            "mae": 1.1818181818181819,
+            "rmse": 1.5075567228888183
+          }
+        },
+        "direct_regression": {
+          "equal_coverage": [
+            {
+              "selected": 81,
+              "actual_full_selected": 0,
+              "actual_open_not_selected": 18
+            },
+            {
+              "selected": 91,
+              "actual_full_selected": 2,
+              "actual_open_not_selected": 10
+            }
+          ],
+          "all": {
+            "n": 102,
+            "mae": 4.566956634236994,
+            "rmse": 6.8972075386837
+          },
+          "actual_0_to_2": {
+            "n": 11,
+            "mae": 2.2666381589074778,
+            "rmse": 2.6529344767228387
+          }
+        },
+        "change_regression": {
+          "equal_coverage": [
+            {
+              "selected": 81,
+              "actual_full_selected": 0,
+              "actual_open_not_selected": 18
+            },
+            {
+              "selected": 91,
+              "actual_full_selected": 2,
+              "actual_open_not_selected": 10
+            }
+          ],
+          "all": {
+            "n": 102,
+            "mae": 4.422847825002438,
+            "rmse": 6.633456761807249
+          },
+          "actual_0_to_2": {
+            "n": 11,
+            "mae": 2.1324691849018946,
+            "rmse": 2.578049127835744
+          }
+        },
+        "logistic": {
+          "equal_coverage": [
+            {
+              "selected": 81,
+              "actual_full_selected": 1,
+              "actual_open_not_selected": 19
+            },
+            {
+              "selected": 91,
+              "actual_full_selected": 2,
+              "actual_open_not_selected": 10
+            }
+          ]
+        }
+      }
+    }
+  }
+}

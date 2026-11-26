@@ -1,0 +1,86 @@
+{
+  "start": "2026-10-19T04:00:00+00:00",
+  "end_exclusive": "2026-10-26T04:00:00+00:00",
+  "samples": 5057,
+  "stations": 144,
+  "actual_full": 127,
+  "actual_close_to_full": 498,
+  "requested_coverage": [
+    0.8,
+    0.9
+  ],
+  "methods": {
+    "persistence": {
+      "all": {
+        "n": 5057,
+        "mae": 3.7277041724342497,
+        "rmse": 4.885985009752183
+      },
+      "actual_0_to_2": {
+        "n": 498,
+        "mae": 3.8132530120481927,
+        "rmse": 5.350937312329675
+      },
+      "equal_coverage": [
+        {
+          "selected": 4045,
+          "actual_full_selected": 38,
+          "actual_open_not_selected": 923
+        },
+        {
+          "selected": 4551,
+          "actual_full_selected": 72,
+          "actual_open_not_selected": 451
+        }
+      ]
+    },
+    "direct_regression": {
+      "all": {
+        "n": 5057,
+        "mae": 3.634910737961491,
+        "rmse": 4.6486951050205985
+      },
+      "actual_0_to_2": {
+        "n": 498,
+        "mae": 4.6329251607247075,
+        "rmse": 5.608927819187456
+      },
+      "equal_coverage": [
+        {
+          "selected": 4045,
+          "actual_full_selected": 44,
+          "actual_open_not_selected": 929
+        },
+        {
+          "selected": 4551,
+          "actual_full_selected": 67,
+          "actual_open_not_selected": 446
+        }
+      ]
+    },
+    "change_regression": {
+      "all": {
+        "n": 5057,
+        "mae": 3.6152444069201977,
+        "rmse": 4.62955412190197
+      },
+      "actual_0_to_2": {
+        "n": 498,
+        "mae": 4.542253341471104,
+        "rmse": 5.566670946859529
+      },
+      "equal_coverage": [
+        {
+          "selected": 4045,
+          "actual_full_selected": 44,
+          "actual_open_not_selected": 929
+        },
+        {
+          "selected": 4551,
+          "actual_full_selected": 70,
+          "actual_open_not_selected": 449
+        }
+      ]
+    }
+  }
+}

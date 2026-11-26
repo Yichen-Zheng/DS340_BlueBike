@@ -1,0 +1,126 @@
+{
+  "model_type": "dock_availability_logistic_v1",
+  "feature_version": 4,
+  "data_kind": "real",
+  "training_data_source": "citybikes",
+  "horizon_minutes": 15,
+  "features": [
+    "station_id",
+    "available_docks",
+    "lag_5",
+    "lag_15",
+    "lag_30",
+    "change_5",
+    "hour_sin",
+    "hour_cos",
+    "weekday",
+    "weekend",
+    "capacity",
+    "latitude",
+    "longitude",
+    "lag_5_missing",
+    "lag_5_age_seconds",
+    "lag_15_missing",
+    "lag_15_age_seconds",
+    "lag_30_missing",
+    "lag_30_age_seconds",
+    "flow_group",
+    "recent_change",
+    "recent_change_age_seconds",
+    "recent_change_missing",
+    "recent_change_flow_group_0",
+    "recent_change_flow_group_1",
+    "recent_change_flow_group_2",
+    "recent_change_flow_group_3",
+    "recent_change_flow_group_unknown",
+    "time_band"
+  ],
+  "include_time_band": true,
+  "training_base_range": [
+    "2026-09-01T00:15:15+00:00",
+    "2026-10-05T03:00:20+00:00"
+  ],
+  "validation_starts": "2026-10-05T04:00:00+00:00",
+  "test_starts": "2026-10-19T04:00:00+00:00",
+  "test_ends_exclusive": "2026-10-26T04:00:00+00:00",
+  "reference_regression_version": "real-docks-v4-7bd8e0eada5a",
+  "training_rows": 30994,
+  "training_actual_full": 1192,
+  "test_stations": 144,
+  "c": 0.1,
+  "validation_full_average_precision_by_c": [
+    {
+      "c": 0.01,
+      "full_average_precision": 0.10872197754080451
+    },
+    {
+      "c": 0.1,
+      "full_average_precision": 0.10954067337391746
+    },
+    {
+      "c": 1.0,
+      "full_average_precision": 0.10952069491081654
+    }
+  ],
+  "validation_requested_coverage": 0.8,
+  "decision_cutoff": -0.40652618373629024,
+  "validation_at_cutoff": {
+    "samples": 10408,
+    "recommended": 8326,
+    "actual_full": 338,
+    "actual_full_recommended": 142,
+    "actual_open": 10070,
+    "actual_open_not_recommended": 1886
+  },
+  "test_at_cutoff": {
+    "samples": 5057,
+    "recommended": 4071,
+    "actual_full": 127,
+    "actual_full_recommended": 53,
+    "actual_open": 4930,
+    "actual_open_not_recommended": 912
+  },
+  "equal_coverage_fractions": [
+    0.8,
+    0.9
+  ],
+  "test_equal_coverage": {
+    "persistence": [
+      {
+        "selected": 4045,
+        "actual_full_selected": 38,
+        "actual_open_not_selected": 923
+      },
+      {
+        "selected": 4551,
+        "actual_full_selected": 72,
+        "actual_open_not_selected": 451
+      }
+    ],
+    "change_regression": [
+      {
+        "selected": 4045,
+        "actual_full_selected": 44,
+        "actual_open_not_selected": 929
+      },
+      {
+        "selected": 4551,
+        "actual_full_selected": 70,
+        "actual_open_not_selected": 449
+      }
+    ],
+    "logistic": [
+      {
+        "selected": 4045,
+        "actual_full_selected": 52,
+        "actual_open_not_selected": 937
+      },
+      {
+        "selected": 4551,
+        "actual_full_selected": 75,
+        "actual_open_not_selected": 454
+      }
+    ]
+  },
+  "model_version": "logistic-docks-v1-bca1913efa96"
+}
