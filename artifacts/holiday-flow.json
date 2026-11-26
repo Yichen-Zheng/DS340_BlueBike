@@ -1,0 +1,240 @@
+{
+  "years": {
+    "2024": {
+      "matched_stations": 505,
+      "daily": {
+        "Monday": {
+          "date": "2024-11-25",
+          "holiday_trip_departures": 11865,
+          "november_mean_trip_departures": 14652.5,
+          "november_mean_absolute_net_flow": 0.3552805280528053,
+          "july_to_september_mean_trip_departures": 17705.69230769231,
+          "july_to_september_mean_absolute_net_flow": 0.4146293475501396,
+          "holiday_mean_absolute_net_flow": 0.2992986798679868
+        },
+        "Tuesday": {
+          "date": "2024-11-26",
+          "holiday_trip_departures": 8597,
+          "november_mean_trip_departures": 18311.5,
+          "november_mean_absolute_net_flow": 0.41395420792079207,
+          "july_to_september_mean_trip_departures": 19186.46153846154,
+          "july_to_september_mean_absolute_net_flow": 0.43302075399847684,
+          "holiday_mean_absolute_net_flow": 0.2320338283828383
+        },
+        "Wednesday": {
+          "date": "2024-11-27",
+          "holiday_trip_departures": 9616,
+          "november_mean_trip_departures": 18097.0,
+          "november_mean_absolute_net_flow": 0.41494430693069306,
+          "july_to_september_mean_trip_departures": 19229.153846153848,
+          "july_to_september_mean_absolute_net_flow": 0.43403306676821535,
+          "holiday_mean_absolute_net_flow": 0.25773514851485146
+        },
+        "Thursday": {
+          "date": "2024-11-28",
+          "holiday_trip_departures": 1917,
+          "november_mean_trip_departures": 13711.5,
+          "november_mean_absolute_net_flow": 0.332240099009901,
+          "july_to_september_mean_trip_departures": 18920.083333333332,
+          "july_to_september_mean_absolute_net_flow": 0.4321885313531353,
+          "holiday_mean_absolute_net_flow": 0.06631600660066006
+        },
+        "Friday": {
+          "date": "2024-11-29",
+          "holiday_trip_departures": 5844,
+          "november_mean_trip_departures": 14967.0,
+          "november_mean_absolute_net_flow": 0.3503712871287129,
+          "july_to_september_mean_trip_departures": 18520.923076923078,
+          "july_to_september_mean_absolute_net_flow": 0.43200368113734444,
+          "holiday_mean_absolute_net_flow": 0.17027640264026403
+        },
+        "Saturday": {
+          "date": "2024-11-30",
+          "holiday_trip_departures": 6028,
+          "november_mean_trip_departures": 10879.0,
+          "november_mean_absolute_net_flow": 0.27794966996699666,
+          "july_to_september_mean_trip_departures": 17067.076923076922,
+          "july_to_september_mean_absolute_net_flow": 0.41215568672251834,
+          "holiday_mean_absolute_net_flow": 0.17747524752475247
+        },
+        "Sunday": {
+          "date": "2024-12-01",
+          "holiday_trip_departures": 5949,
+          "november_mean_trip_departures": 11335.0,
+          "november_mean_absolute_net_flow": 0.2860457920792079,
+          "july_to_september_mean_trip_departures": 16286.538461538461,
+          "july_to_september_mean_absolute_net_flow": 0.39212363544046713,
+          "holiday_mean_absolute_net_flow": 0.17095709570957096
+        }
+      }
+    },
+    "2025": {
+      "matched_stations": 581,
+      "daily": {
+        "Monday": {
+          "date": "2025-11-24",
+          "holiday_trip_departures": 11431,
+          "november_mean_trip_departures": 12219.0,
+          "november_mean_absolute_net_flow": 0.27891028399311535,
+          "july_to_september_mean_trip_departures": 18318.416666666668,
+          "july_to_september_mean_absolute_net_flow": 0.38427818416523235,
+          "holiday_mean_absolute_net_flow": 0.2677674985656913
+        },
+        "Tuesday": {
+          "date": "2025-11-25",
+          "holiday_trip_departures": 10956,
+          "november_mean_trip_departures": 14000.0,
+          "november_mean_absolute_net_flow": 0.31194420539300055,
+          "july_to_september_mean_trip_departures": 19488.85714285714,
+          "july_to_september_mean_absolute_net_flow": 0.39895039341037614,
+          "holiday_mean_absolute_net_flow": 0.25423121055651177
+        },
+        "Wednesday": {
+          "date": "2025-11-26",
+          "holiday_trip_departures": 10375,
+          "november_mean_trip_departures": 14396.5,
+          "november_mean_absolute_net_flow": 0.31707185886402756,
+          "july_to_september_mean_trip_departures": 18298.69230769231,
+          "july_to_september_mean_absolute_net_flow": 0.3815274835606161,
+          "holiday_mean_absolute_net_flow": 0.24817125645438898
+        },
+        "Thursday": {
+          "date": "2025-11-27",
+          "holiday_trip_departures": 4446,
+          "november_mean_trip_departures": 14337.0,
+          "november_mean_absolute_net_flow": 0.31470524956970736,
+          "july_to_september_mean_trip_departures": 17353.76923076923,
+          "july_to_september_mean_absolute_net_flow": 0.3658617988437266,
+          "holiday_mean_absolute_net_flow": 0.12372705106138841
+        },
+        "Friday": {
+          "date": "2025-11-28",
+          "holiday_trip_departures": 5009,
+          "november_mean_trip_departures": 13847.5,
+          "november_mean_absolute_net_flow": 0.31010649741824436,
+          "july_to_september_mean_trip_departures": 19553.166666666668,
+          "july_to_september_mean_absolute_net_flow": 0.40624103557085484,
+          "holiday_mean_absolute_net_flow": 0.1368868330464716
+        },
+        "Saturday": {
+          "date": "2025-11-29",
+          "holiday_trip_departures": 5669,
+          "november_mean_trip_departures": 12127.5,
+          "november_mean_absolute_net_flow": 0.2754589787722318,
+          "july_to_september_mean_trip_departures": 18832.076923076922,
+          "july_to_september_mean_absolute_net_flow": 0.40186708371949337,
+          "holiday_mean_absolute_net_flow": 0.15103270223752152
+        },
+        "Sunday": {
+          "date": "2025-11-30",
+          "holiday_trip_departures": 4248,
+          "november_mean_trip_departures": 9902.5,
+          "november_mean_absolute_net_flow": 0.2356838066551922,
+          "july_to_september_mean_trip_departures": 15888.692307692309,
+          "july_to_september_mean_absolute_net_flow": 0.3478584668343704,
+          "holiday_mean_absolute_net_flow": 0.11806153184165233
+        }
+      }
+    }
+  },
+  "thursday": {
+    "2024_fit_2025_test": {
+      "holiday_factor": 0.0,
+      "test_station_bins": 55776,
+      "summer_unadjusted": {
+        "mae": 0.2854370779822587,
+        "rmse": 0.6057455440733256
+      },
+      "summer_adjusted": {
+        "mae": 0.12372705106138841,
+        "rmse": 0.44608563994381717
+      },
+      "november_unadjusted": {
+        "mae": 0.3502761044176707,
+        "rmse": 0.761482196000021
+      },
+      "zero_net_flow": {
+        "mae": 0.12372705106138841,
+        "rmse": 0.44608563994381717
+      },
+      "thursday_with_fitted_factor": {
+        "mae": 0.12372705106138841,
+        "rmse": 0.44608563994381717
+      }
+    },
+    "2025_fit_2024_test": {
+      "holiday_factor": 0.0,
+      "test_station_bins": 48480,
+      "summer_unadjusted": {
+        "mae": 0.27699394939493954,
+        "rmse": 0.6265624949989803
+      },
+      "summer_adjusted": {
+        "mae": 0.06631600660066006,
+        "rmse": 0.30225363641496955
+      },
+      "november_unadjusted": {
+        "mae": 0.330259900990099,
+        "rmse": 0.742189806970533
+      },
+      "zero_net_flow": {
+        "mae": 0.06631600660066006,
+        "rmse": 0.30225363641496955
+      },
+      "thursday_with_fitted_factor": {
+        "mae": 0.06631600660066006,
+        "rmse": 0.30225363641496955
+      }
+    }
+  },
+  "whole_week": {
+    "2024_fit_2025_test": {
+      "holiday_factor": 0.0,
+      "test_station_bins": 390432,
+      "summer_unadjusted": {
+        "mae": 0.31281236649521005,
+        "rmse": 0.6446628258242355
+      },
+      "summer_adjusted": {
+        "mae": 0.18569686910908942,
+        "rmse": 0.5619917860983349
+      },
+      "november_unadjusted": {
+        "mae": 0.3526849745922465,
+        "rmse": 0.757783846951165
+      },
+      "zero_net_flow": {
+        "mae": 0.18569686910908942,
+        "rmse": 0.5619917860983349
+      },
+      "thursday_with_fitted_factor": {
+        "mae": 0.12372705106138841,
+        "rmse": 0.44608563994381717
+      }
+    },
+    "2025_fit_2024_test": {
+      "holiday_factor": 0.0,
+      "test_station_bins": 339360,
+      "summer_unadjusted": {
+        "mae": 0.3355090728853105,
+        "rmse": 0.7093504499725919
+      },
+      "summer_adjusted": {
+        "mae": 0.1962989156058463,
+        "rmse": 0.5895472895372008
+      },
+      "november_unadjusted": {
+        "mae": 0.39681606553512494,
+        "rmse": 0.8586971336430166
+      },
+      "zero_net_flow": {
+        "mae": 0.1962989156058463,
+        "rmse": 0.5895472895372008
+      },
+      "thursday_with_fitted_factor": {
+        "mae": 0.06631600660066006,
+        "rmse": 0.30225363641496955
+      }
+    }
+  }
+}

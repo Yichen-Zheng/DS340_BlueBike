@@ -1,0 +1,52 @@
+{
+  "validation_false_open_at_80": {
+    "current_only": 156,
+    "logistic": 142,
+    "logistic_demote_current_at_most_2": 141,
+    "logistic_demote_current_at_most_5": 155,
+    "logistic_demote_current_at_most_5_and_falling": 140
+  },
+  "diagnostic_false_open_at_80": {
+    "current_only": 38,
+    "logistic": 52,
+    "logistic_demote_current_at_most_2": 47,
+    "logistic_demote_current_at_most_5": 46,
+    "logistic_demote_current_at_most_5_and_falling": 54
+  },
+  "validation_selected_rule": "logistic_demote_current_at_most_5_and_falling",
+  "trip_accounting": {
+    "all_full": {
+      "observations": 127,
+      "mapped": 125,
+      "mapped_with_drop": 117,
+      "snapshot_exact": 59,
+      "snapshot_covers_at_least_half_drop": 103,
+      "snapshot_net_returns_zero_or_less": 11,
+      "station_report_exact": 56,
+      "station_report_covers_at_least_half_drop": 101,
+      "station_report_net_returns_zero_or_less": 13
+    },
+    "logistic_false_open": {
+      "observations": 52,
+      "mapped": 51,
+      "mapped_with_drop": 51,
+      "snapshot_exact": 23,
+      "snapshot_covers_at_least_half_drop": 45,
+      "snapshot_net_returns_zero_or_less": 3,
+      "station_report_exact": 18,
+      "station_report_covers_at_least_half_drop": 44,
+      "station_report_net_returns_zero_or_less": 5
+    },
+    "large_drop": {
+      "observations": 32,
+      "mapped": 32,
+      "mapped_with_drop": 32,
+      "snapshot_exact": 14,
+      "snapshot_covers_at_least_half_drop": 27,
+      "snapshot_net_returns_zero_or_less": 3,
+      "station_report_exact": 11,
+      "station_report_covers_at_least_half_drop": 27,
+      "station_report_net_returns_zero_or_less": 3
+    }
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "data_kind": "real",
+  "regression_target": "dock_change",
+  "training_data_source": "citybikes",
+  "horizon_minutes": 15,
+  "feature_version": 4,
+  "features": [
+    "station_id",
+    "available_docks",
+    "lag_5",
+    "lag_15",
+    "lag_30",
+    "change_5",
+    "hour_sin",
+    "hour_cos",
+    "weekday",
+    "weekend",
+    "capacity",
+    "latitude",
+    "longitude",
+    "lag_5_missing",
+    "lag_5_age_seconds",
+    "lag_15_missing",
+    "lag_15_age_seconds",
+    "lag_30_missing",
+    "lag_30_age_seconds",
+    "recent_change",
+    "recent_change_age_seconds",
+    "recent_change_missing"
+  ],
+  "allow_missing_lags": true,
+  "timing_seconds": {
+    "target_tolerance": 90,
+    "lag_tolerance": 120,
+    "max_gap": 180,
+    "max_age": 300
+  },
+  "sklearn_version": "1.4.2",
+  "training_base_range": [
+    "2026-03-01T11:16:57+00:00",
+    "2026-03-22T23:52:41+00:00"
+  ],
+  "training_label_range": [
+    "2026-03-01T11:30:56+00:00",
+    "2026-03-23T00:06:39+00:00"
+  ],
+  "validation_starts": "2026-03-23T04:00:00+00:00",
+  "test_starts": "2026-04-01T04:00:00+00:00",
+  "test_ends_exclusive": "2026-04-08T04:00:00+00:00",
+  "test_stations": 63,
+  "training_rows": 2139,
+  "ridge_alpha": 1000.0,
+  "validation": {
+    "persistence": {
+      "all": {
+        "n": 1130,
+        "mae": 3.6495575221238936,
+        "rmse": 4.878161557081843
+      },
+      "actual_0_to_2": {
+        "n": 95,
+        "mae": 2.9789473684210526,
+        "rmse": 3.823748505273189
+      },
+      "actual_full": 25,
+      "actual_full_predicted_at_least_one": 23,
+      "actual_at_least_one_predicted_below_one": 12
+    },
+    "regression": {
+      "all": {
+        "n": 1130,
+        "mae": 3.495369550471558,
+        "rmse": 4.441582209535219
+      },
+      "actual_0_to_2": {
+        "n": 95,
+        "mae": 3.781929959455142,
+        "rmse": 4.551945438566842
+      },
+      "actual_full": 25,
+      "actual_full_predicted_at_least_one": 24,
+      "actual_at_least_one_predicted_below_one": 12
+    }
+  },
+  "validation_candidates": [
+    {
+      "alpha": 1.0,
+      "mae": 3.5621237011707256
+    },
+    {
+      "alpha": 100.0,
+      "mae": 3.538279018455293
+    },
+    {
+      "alpha": 1000.0,
+      "mae": 3.495369550471558
+    }
+  ],
+  "test": {
+    "persistence": {
+      "all": {
+        "n": 1030,
+        "mae": 3.9757281553398056,
+        "rmse": 5.1889539136946095
+      },
+      "actual_0_to_2": {
+        "n": 115,
+        "mae": 4.234782608695652,
+        "rmse": 5.685221115351169
+      },
+      "actual_full": 32,
+      "actual_full_predicted_at_least_one": 27,
+      "actual_at_least_one_predicted_below_one": 22
+    },
+    "regression": {
+      "all": {
+        "n": 1030,
+        "mae": 3.7865854399418173,
+        "rmse": 4.926249664313274
+      },
+      "actual_0_to_2": {
+        "n": 115,
+        "mae": 4.76419894615945,
+        "rmse": 5.806069661215373
+      },
+      "actual_full": 32,
+      "actual_full_predicted_at_least_one": 31,
+      "actual_at_least_one_predicted_below_one": 32
+    }
+  },
+  "test_history_coverage": {
+    "complete_lag_samples": 4,
+    "complete_lag_stations": 1,
+    "missing_lag_samples": {
+      "5": 656,
+      "15": 951,
+      "30": 1025
+    }
+  },
+  "test_by_week": {
+    "2026-03-30": {
+      "persistence": {
+        "all": {
+          "n": 708,
+          "mae": 4.306497175141243,
+          "rmse": 5.602284642923722
+        },
+        "actual_0_to_2": {
+          "n": 85,
+          "mae": 4.5058823529411764,
+          "rmse": 5.973470761724416
+        },
+        "actual_full": 24,
+        "actual_full_predicted_at_least_one": 20,
+        "actual_at_least_one_predicted_below_one": 14
+      },
+      "regression": {
+        "all": {
+          "n": 708,
+          "mae": 4.083450402317857,
+          "rmse": 5.272975181524816
+        },
+        "actual_0_to_2": {
+          "n": 85,
+          "mae": 5.003397438569031,
+          "rmse": 6.057994849955199
+        },
+        "actual_full": 24,
+        "actual_full_predicted_at_least_one": 23,
+        "actual_at_least_one_predicted_below_one": 26
+      }
+    },
+    "2026-04-06": {
+      "persistence": {
+        "all": {
+          "n": 322,
+          "mae": 3.248447204968944,
+          "rmse": 4.13739198316527
+        },
+        "actual_0_to_2": {
+          "n": 30,
+          "mae": 3.466666666666667,
+          "rmse": 4.774934554525329
+        },
+        "actual_full": 8,
+        "actual_full_predicted_at_least_one": 7,
+        "actual_at_least_one_predicted_below_one": 8
+      },
+      "regression": {
+        "all": {
+          "n": 322,
+          "mae": 3.133851299065307,
+          "rmse": 4.061083524371041
+        },
+        "actual_0_to_2": {
+          "n": 30,
+          "mae": 4.086469884332301,
+          "rmse": 5.024143471195619
+        },
+        "actual_full": 8,
+        "actual_full_predicted_at_least_one": 8,
+        "actual_at_least_one_predicted_below_one": 6
+      }
+    }
+  },
+  "model_version": "real-docks-v4-66509bf4a39d"
+}

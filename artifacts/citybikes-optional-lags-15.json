@@ -1,0 +1,171 @@
+{
+  "data_kind": "real",
+  "training_data_source": "citybikes",
+  "horizon_minutes": 15,
+  "feature_version": 2,
+  "features": [
+    "station_id",
+    "available_docks",
+    "lag_5",
+    "lag_15",
+    "lag_30",
+    "change_5",
+    "hour_sin",
+    "hour_cos",
+    "weekday",
+    "weekend",
+    "capacity",
+    "latitude",
+    "longitude",
+    "lag_5_missing",
+    "lag_5_age_seconds",
+    "lag_15_missing",
+    "lag_15_age_seconds",
+    "lag_30_missing",
+    "lag_30_age_seconds"
+  ],
+  "allow_missing_lags": true,
+  "timing_seconds": {
+    "target_tolerance": 90,
+    "lag_tolerance": 120,
+    "max_gap": 180,
+    "max_age": 300
+  },
+  "sklearn_version": "1.4.2",
+  "training_base_range": [
+    "2026-09-01T00:15:15+00:00",
+    "2026-10-05T03:00:20+00:00"
+  ],
+  "training_label_range": [
+    "2026-09-01T00:29:18+00:00",
+    "2026-10-05T03:14:22+00:00"
+  ],
+  "validation_starts": "2026-10-05T04:00:00+00:00",
+  "test_starts": "2026-10-19T04:00:00+00:00",
+  "test_ends_exclusive": "2026-10-26T04:00:00+00:00",
+  "test_stations": 144,
+  "training_rows": 30994,
+  "ridge_alpha": 1.0,
+  "validation": {
+    "persistence": {
+      "all": {
+        "n": 10408,
+        "mae": 3.52152190622598,
+        "rmse": 4.623570265332054
+      },
+      "actual_0_to_2": {
+        "n": 1232,
+        "mae": 3.814935064935065,
+        "rmse": 5.212372892342907
+      },
+      "actual_full": 338,
+      "actual_full_predicted_at_least_one": 310,
+      "actual_at_least_one_predicted_below_one": 196
+    },
+    "regression": {
+      "all": {
+        "n": 10408,
+        "mae": 3.4184713384879344,
+        "rmse": 4.4095519000875445
+      },
+      "actual_0_to_2": {
+        "n": 1232,
+        "mae": 4.6453518162890886,
+        "rmse": 5.595056563143152
+      },
+      "actual_full": 338,
+      "actual_full_predicted_at_least_one": 330,
+      "actual_at_least_one_predicted_below_one": 29
+    }
+  },
+  "validation_candidates": [
+    {
+      "alpha": 1.0,
+      "mae": 3.4184713384879344
+    },
+    {
+      "alpha": 100.0,
+      "mae": 3.419543342478227
+    },
+    {
+      "alpha": 1000.0,
+      "mae": 3.4344950097630846
+    }
+  ],
+  "test": {
+    "persistence": {
+      "all": {
+        "n": 5057,
+        "mae": 3.7277041724342497,
+        "rmse": 4.885985009752183
+      },
+      "actual_0_to_2": {
+        "n": 498,
+        "mae": 3.8132530120481927,
+        "rmse": 5.350937312329675
+      },
+      "actual_full": 127,
+      "actual_full_predicted_at_least_one": 119,
+      "actual_at_least_one_predicted_below_one": 80
+    },
+    "regression": {
+      "all": {
+        "n": 5057,
+        "mae": 3.6348665755833887,
+        "rmse": 4.648699266219883
+      },
+      "actual_0_to_2": {
+        "n": 498,
+        "mae": 4.632865830693754,
+        "rmse": 5.608970648079073
+      },
+      "actual_full": 127,
+      "actual_full_predicted_at_least_one": 127,
+      "actual_at_least_one_predicted_below_one": 8
+    }
+  },
+  "test_history_coverage": {
+    "complete_lag_samples": 381,
+    "complete_lag_stations": 10,
+    "missing_lag_samples": {
+      "5": 2663,
+      "15": 4128,
+      "30": 4664
+    }
+  },
+  "test_by_week": {
+    "2026-10-19": {
+      "persistence": {
+        "all": {
+          "n": 5057,
+          "mae": 3.7277041724342497,
+          "rmse": 4.885985009752183
+        },
+        "actual_0_to_2": {
+          "n": 498,
+          "mae": 3.8132530120481927,
+          "rmse": 5.350937312329675
+        },
+        "actual_full": 127,
+        "actual_full_predicted_at_least_one": 119,
+        "actual_at_least_one_predicted_below_one": 80
+      },
+      "regression": {
+        "all": {
+          "n": 5057,
+          "mae": 3.6348665755833887,
+          "rmse": 4.648699266219883
+        },
+        "actual_0_to_2": {
+          "n": 498,
+          "mae": 4.632865830693754,
+          "rmse": 5.608970648079073
+        },
+        "actual_full": 127,
+        "actual_full_predicted_at_least_one": 127,
+        "actual_at_least_one_predicted_below_one": 8
+      }
+    }
+  },
+  "model_version": "real-docks-v2-01ee6220e49f"
+}

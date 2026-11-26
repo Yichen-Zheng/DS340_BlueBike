@@ -1,0 +1,75 @@
+{
+  "validation_range": [
+    "2026-10-05T04:00:00+00:00",
+    "2026-10-19T04:00:00+00:00"
+  ],
+  "test_range": [
+    "2026-10-26T04:00:00+00:00",
+    "2026-10-31T04:00:00+00:00"
+  ],
+  "validation_max_full_station_false_open_rate": 0.5,
+  "regression": {
+    "validation_adjusted": {
+      "minimum_recommendation_docks": 5.5,
+      "samples": 10408,
+      "actual_full": 338,
+      "actual_full_meets_threshold": 150,
+      "full_station_false_open_rate": 0.4437869822485207,
+      "actual_open": 10070,
+      "actual_open_below_threshold": 2071,
+      "meets_threshold": 8149
+    },
+    "test_default": {
+      "minimum_recommendation_docks": 1.0,
+      "samples": 4386,
+      "actual_full": 157,
+      "actual_full_meets_threshold": 156,
+      "full_station_false_open_rate": 0.9936305732484076,
+      "actual_open": 4229,
+      "actual_open_below_threshold": 19,
+      "meets_threshold": 4366
+    },
+    "test_adjusted": {
+      "minimum_recommendation_docks": 5.5,
+      "samples": 4386,
+      "actual_full": 157,
+      "actual_full_meets_threshold": 52,
+      "full_station_false_open_rate": 0.33121019108280253,
+      "actual_open": 4229,
+      "actual_open_below_threshold": 783,
+      "meets_threshold": 3498
+    }
+  },
+  "persistence": {
+    "validation_adjusted": {
+      "minimum_recommendation_docks": 4.5,
+      "samples": 10408,
+      "actual_full": 338,
+      "actual_full_meets_threshold": 144,
+      "full_station_false_open_rate": 0.4260355029585799,
+      "actual_open": 10070,
+      "actual_open_below_threshold": 2049,
+      "meets_threshold": 8165
+    },
+    "test_default": {
+      "minimum_recommendation_docks": 1.0,
+      "samples": 4386,
+      "actual_full": 157,
+      "actual_full_meets_threshold": 148,
+      "full_station_false_open_rate": 0.9426751592356688,
+      "actual_open": 4229,
+      "actual_open_below_threshold": 82,
+      "meets_threshold": 4295
+    },
+    "test_adjusted": {
+      "minimum_recommendation_docks": 4.5,
+      "samples": 4386,
+      "actual_full": 157,
+      "actual_full_meets_threshold": 59,
+      "full_station_false_open_rate": 0.37579617834394907,
+      "actual_open": 4229,
+      "actual_open_below_threshold": 802,
+      "meets_threshold": 3486
+    }
+  }
+}

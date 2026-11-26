@@ -1,0 +1,120 @@
+{
+  "model_type": "dock_availability_logistic_v1",
+  "feature_version": 4,
+  "data_kind": "real",
+  "training_data_source": "citybikes",
+  "horizon_minutes": 15,
+  "features": [
+    "station_id",
+    "available_docks",
+    "lag_5",
+    "lag_15",
+    "lag_30",
+    "change_5",
+    "hour_sin",
+    "hour_cos",
+    "weekday",
+    "weekend",
+    "capacity",
+    "latitude",
+    "longitude",
+    "lag_5_missing",
+    "lag_5_age_seconds",
+    "lag_15_missing",
+    "lag_15_age_seconds",
+    "lag_30_missing",
+    "lag_30_age_seconds",
+    "recent_change",
+    "recent_change_age_seconds",
+    "recent_change_missing",
+    "time_band"
+  ],
+  "include_time_band": true,
+  "training_base_range": [
+    "2026-03-01T11:16:57+00:00",
+    "2026-03-22T23:52:41+00:00"
+  ],
+  "validation_starts": "2026-03-23T04:00:00+00:00",
+  "test_starts": "2026-04-01T04:00:00+00:00",
+  "test_ends_exclusive": "2026-04-08T04:00:00+00:00",
+  "reference_regression_version": "real-docks-v4-66509bf4a39d",
+  "training_rows": 2139,
+  "training_actual_full": 49,
+  "test_stations": 63,
+  "c": 1.0,
+  "validation_full_average_precision_by_c": [
+    {
+      "c": 0.01,
+      "full_average_precision": 0.05201042223941592
+    },
+    {
+      "c": 0.1,
+      "full_average_precision": 0.05189558679411038
+    },
+    {
+      "c": 1.0,
+      "full_average_precision": 0.053172267959574734
+    }
+  ],
+  "validation_requested_coverage": 0.8,
+  "decision_cutoff": 1.773592155560686,
+  "validation_at_cutoff": {
+    "samples": 1130,
+    "recommended": 904,
+    "actual_full": 25,
+    "actual_full_recommended": 10,
+    "actual_open": 1105,
+    "actual_open_not_recommended": 211
+  },
+  "test_at_cutoff": {
+    "samples": 1030,
+    "recommended": 776,
+    "actual_full": 32,
+    "actual_full_recommended": 25,
+    "actual_open": 998,
+    "actual_open_not_recommended": 247
+  },
+  "equal_coverage_fractions": [
+    0.8,
+    0.9
+  ],
+  "test_equal_coverage": {
+    "persistence": [
+      {
+        "selected": 824,
+        "actual_full_selected": 14,
+        "actual_open_not_selected": 188
+      },
+      {
+        "selected": 927,
+        "actual_full_selected": 22,
+        "actual_open_not_selected": 93
+      }
+    ],
+    "change_regression": [
+      {
+        "selected": 824,
+        "actual_full_selected": 18,
+        "actual_open_not_selected": 192
+      },
+      {
+        "selected": 927,
+        "actual_full_selected": 23,
+        "actual_open_not_selected": 94
+      }
+    ],
+    "logistic": [
+      {
+        "selected": 824,
+        "actual_full_selected": 28,
+        "actual_open_not_selected": 202
+      },
+      {
+        "selected": 927,
+        "actual_full_selected": 30,
+        "actual_open_not_selected": 101
+      }
+    ]
+  },
+  "model_version": "logistic-docks-v1-11bef2b5aa89"
+}

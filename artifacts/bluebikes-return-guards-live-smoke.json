@@ -1,0 +1,381 @@
+{
+  "coverage": 0.8,
+  "validation_range": [
+    "2026-10-05T04:00:00+00:00",
+    "2026-10-19T04:00:00+00:00"
+  ],
+  "test_range": [
+    "2026-11-25T20:25:00+00:00",
+    "2026-11-25T20:47:52+00:00"
+  ],
+  "selected_low_dock_cutoff": 3,
+  "selected_trend_window_minutes": 5,
+  "selected_trend_penalty_docks": 3,
+  "validation": {
+    "samples": 10408,
+    "stations": 191,
+    "actual_full": 338,
+    "methods": {
+      "current_docks": {
+        "selected": 8326,
+        "actual_full_selected": 156,
+        "actual_open_not_selected": 1900,
+        "by_current_docks": {
+          "0_to_2_current_docks": {
+            "actual_full": 127,
+            "actual_full_selected": 0
+          },
+          "3_to_5_current_docks": {
+            "actual_full": 104,
+            "actual_full_selected": 49
+          },
+          "6_or_more_current_docks": {
+            "actual_full": 107,
+            "actual_full_selected": 107
+          }
+        }
+      },
+      "logistic": {
+        "selected": 8326,
+        "actual_full_selected": 142,
+        "actual_open_not_selected": 1886,
+        "by_current_docks": {
+          "0_to_2_current_docks": {
+            "actual_full": 127,
+            "actual_full_selected": 11
+          },
+          "3_to_5_current_docks": {
+            "actual_full": 104,
+            "actual_full_selected": 61
+          },
+          "6_or_more_current_docks": {
+            "actual_full": 107,
+            "actual_full_selected": 70
+          }
+        }
+      },
+      "logistic_demote_2_or_fewer": {
+        "selected": 8326,
+        "actual_full_selected": 141,
+        "actual_open_not_selected": 1885,
+        "by_current_docks": {
+          "0_to_2_current_docks": {
+            "actual_full": 127,
+            "actual_full_selected": 0
+          },
+          "3_to_5_current_docks": {
+            "actual_full": 104,
+            "actual_full_selected": 66
+          },
+          "6_or_more_current_docks": {
+            "actual_full": 107,
+            "actual_full_selected": 75
+          }
+        }
+      },
+      "logistic_demote_3_or_fewer": {
+        "selected": 8326,
+        "actual_full_selected": 140,
+        "actual_open_not_selected": 1884,
+        "by_current_docks": {
+          "0_to_2_current_docks": {
+            "actual_full": 127,
+            "actual_full_selected": 0
+          },
+          "3_to_5_current_docks": {
+            "actual_full": 104,
+            "actual_full_selected": 56
+          },
+          "6_or_more_current_docks": {
+            "actual_full": 107,
+            "actual_full_selected": 84
+          }
+        }
+      },
+      "logistic_demote_5_or_fewer": {
+        "selected": 8326,
+        "actual_full_selected": 155,
+        "actual_open_not_selected": 1899,
+        "by_current_docks": {
+          "0_to_2_current_docks": {
+            "actual_full": 127,
+            "actual_full_selected": 6
+          },
+          "3_to_5_current_docks": {
+            "actual_full": 104,
+            "actual_full_selected": 42
+          },
+          "6_or_more_current_docks": {
+            "actual_full": 107,
+            "actual_full_selected": 107
+          }
+        }
+      },
+      "current_docks_minus_1_on_5min_decline": {
+        "selected": 8326,
+        "actual_full_selected": 156,
+        "actual_open_not_selected": 1900,
+        "by_current_docks": {
+          "0_to_2_current_docks": {
+            "actual_full": 127,
+            "actual_full_selected": 0
+          },
+          "3_to_5_current_docks": {
+            "actual_full": 104,
+            "actual_full_selected": 49
+          },
+          "6_or_more_current_docks": {
+            "actual_full": 107,
+            "actual_full_selected": 107
+          }
+        }
+      },
+      "current_docks_minus_2_on_5min_decline": {
+        "selected": 8326,
+        "actual_full_selected": 153,
+        "actual_open_not_selected": 1897,
+        "by_current_docks": {
+          "0_to_2_current_docks": {
+            "actual_full": 127,
+            "actual_full_selected": 0
+          },
+          "3_to_5_current_docks": {
+            "actual_full": 104,
+            "actual_full_selected": 48
+          },
+          "6_or_more_current_docks": {
+            "actual_full": 107,
+            "actual_full_selected": 105
+          }
+        }
+      },
+      "current_docks_minus_3_on_5min_decline": {
+        "selected": 8326,
+        "actual_full_selected": 151,
+        "actual_open_not_selected": 1895,
+        "by_current_docks": {
+          "0_to_2_current_docks": {
+            "actual_full": 127,
+            "actual_full_selected": 0
+          },
+          "3_to_5_current_docks": {
+            "actual_full": 104,
+            "actual_full_selected": 52
+          },
+          "6_or_more_current_docks": {
+            "actual_full": 107,
+            "actual_full_selected": 99
+          }
+        }
+      },
+      "current_docks_minus_1_on_10min_decline": {
+        "selected": 8326,
+        "actual_full_selected": 155,
+        "actual_open_not_selected": 1899,
+        "by_current_docks": {
+          "0_to_2_current_docks": {
+            "actual_full": 127,
+            "actual_full_selected": 0
+          },
+          "3_to_5_current_docks": {
+            "actual_full": 104,
+            "actual_full_selected": 48
+          },
+          "6_or_more_current_docks": {
+            "actual_full": 107,
+            "actual_full_selected": 107
+          }
+        }
+      },
+      "current_docks_minus_2_on_10min_decline": {
+        "selected": 8326,
+        "actual_full_selected": 157,
+        "actual_open_not_selected": 1901,
+        "by_current_docks": {
+          "0_to_2_current_docks": {
+            "actual_full": 127,
+            "actual_full_selected": 0
+          },
+          "3_to_5_current_docks": {
+            "actual_full": 104,
+            "actual_full_selected": 50
+          },
+          "6_or_more_current_docks": {
+            "actual_full": 107,
+            "actual_full_selected": 107
+          }
+        }
+      },
+      "current_docks_minus_3_on_10min_decline": {
+        "selected": 8326,
+        "actual_full_selected": 155,
+        "actual_open_not_selected": 1899,
+        "by_current_docks": {
+          "0_to_2_current_docks": {
+            "actual_full": 127,
+            "actual_full_selected": 0
+          },
+          "3_to_5_current_docks": {
+            "actual_full": 104,
+            "actual_full_selected": 50
+          },
+          "6_or_more_current_docks": {
+            "actual_full": 107,
+            "actual_full_selected": 105
+          }
+        }
+      }
+    },
+    "decline_signal": {
+      "5": {
+        "all": {
+          "samples_with_usable_history": 4826,
+          "declining_samples": 737,
+          "full_after_decline": 32,
+          "stable_or_rising_samples": 4089,
+          "full_after_stable_or_rising": 109
+        },
+        "16:00\u201320:00": {
+          "samples_with_usable_history": 2439,
+          "declining_samples": 305,
+          "full_after_decline": 16,
+          "stable_or_rising_samples": 2134,
+          "full_after_stable_or_rising": 56
+        }
+      },
+      "10": {
+        "all": {
+          "samples_with_usable_history": 2870,
+          "declining_samples": 140,
+          "full_after_decline": 3,
+          "stable_or_rising_samples": 2730,
+          "full_after_stable_or_rising": 80
+        },
+        "16:00\u201320:00": {
+          "samples_with_usable_history": 1503,
+          "declining_samples": 40,
+          "full_after_decline": 0,
+          "stable_or_rising_samples": 1463,
+          "full_after_stable_or_rising": 43
+        }
+      }
+    }
+  },
+  "test": {
+    "samples": 2064,
+    "stations": 258,
+    "actual_full": 115,
+    "methods": {
+      "current_docks": {
+        "selected": 1651,
+        "actual_full_selected": 2,
+        "actual_open_not_selected": 300,
+        "by_current_docks": {
+          "0_to_2_current_docks": {
+            "actual_full": 110,
+            "actual_full_selected": 0
+          },
+          "3_to_5_current_docks": {
+            "actual_full": 5,
+            "actual_full_selected": 2
+          },
+          "6_or_more_current_docks": {
+            "actual_full": 0,
+            "actual_full_selected": 0
+          }
+        }
+      },
+      "logistic": {
+        "selected": 1651,
+        "actual_full_selected": 46,
+        "actual_open_not_selected": 344,
+        "by_current_docks": {
+          "0_to_2_current_docks": {
+            "actual_full": 110,
+            "actual_full_selected": 41
+          },
+          "3_to_5_current_docks": {
+            "actual_full": 5,
+            "actual_full_selected": 5
+          },
+          "6_or_more_current_docks": {
+            "actual_full": 0,
+            "actual_full_selected": 0
+          }
+        }
+      },
+      "logistic_demote_3_or_fewer": {
+        "selected": 1651,
+        "actual_full_selected": 2,
+        "actual_open_not_selected": 300,
+        "by_current_docks": {
+          "0_to_2_current_docks": {
+            "actual_full": 110,
+            "actual_full_selected": 0
+          },
+          "3_to_5_current_docks": {
+            "actual_full": 5,
+            "actual_full_selected": 2
+          },
+          "6_or_more_current_docks": {
+            "actual_full": 0,
+            "actual_full_selected": 0
+          }
+        }
+      },
+      "current_docks_minus_3_on_5min_decline": {
+        "selected": 1651,
+        "actual_full_selected": 2,
+        "actual_open_not_selected": 300,
+        "by_current_docks": {
+          "0_to_2_current_docks": {
+            "actual_full": 110,
+            "actual_full_selected": 0
+          },
+          "3_to_5_current_docks": {
+            "actual_full": 5,
+            "actual_full_selected": 2
+          },
+          "6_or_more_current_docks": {
+            "actual_full": 0,
+            "actual_full_selected": 0
+          }
+        }
+      }
+    },
+    "decline_signal": {
+      "5": {
+        "all": {
+          "samples_with_usable_history": 774,
+          "declining_samples": 20,
+          "full_after_decline": 4,
+          "stable_or_rising_samples": 754,
+          "full_after_stable_or_rising": 37
+        },
+        "16:00\u201320:00": {
+          "samples_with_usable_history": 0,
+          "declining_samples": 0,
+          "full_after_decline": 0,
+          "stable_or_rising_samples": 0,
+          "full_after_stable_or_rising": 0
+        }
+      },
+      "10": {
+        "all": {
+          "samples_with_usable_history": 0,
+          "declining_samples": 0,
+          "full_after_decline": 0,
+          "stable_or_rising_samples": 0,
+          "full_after_stable_or_rising": 0
+        },
+        "16:00\u201320:00": {
+          "samples_with_usable_history": 0,
+          "declining_samples": 0,
+          "full_after_decline": 0,
+          "stable_or_rising_samples": 0,
+          "full_after_stable_or_rising": 0
+        }
+      }
+    }
+  }
+}

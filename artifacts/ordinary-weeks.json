@@ -1,0 +1,141 @@
+{
+  "archive": "202609-blue-bikes-stats.parquet",
+  "reference_dates": [
+    "2026-07-01",
+    "2026-08-31"
+  ],
+  "reference_excluded_dates": [
+    "2026-07-04"
+  ],
+  "reference_days_per_weekday_monday_first": [
+    9,
+    8,
+    9,
+    9,
+    9,
+    8,
+    9
+  ],
+  "horizon_minutes": 15,
+  "target_tolerance_seconds": 90,
+  "maximum_gap_seconds": 180,
+  "station_status_max_age_seconds": 300,
+  "weeks": {
+    "2026-09-14_to_20": {
+      "archive_rows": 362791,
+      "archive_stations": 620,
+      "candidate_pairs_before_mapping": 7917,
+      "candidate_stations_before_mapping": 184,
+      "samples": 7665,
+      "stations": 174,
+      "persistence": {
+        "all": {
+          "n": 7665,
+          "mae": 3.553946510110894,
+          "rmse": 4.787145758594027
+        },
+        "actual_0_to_2": {
+          "n": 966,
+          "mae": 3.75879917184265,
+          "rmse": 5.165080234636026
+        },
+        "actual_full": 299,
+        "actual_full_predicted_at_least_one": 266,
+        "actual_full_predicted_above_zero": 266,
+        "actual_at_least_one_predicted_below_one": 143
+      },
+      "net_flow_adjusted": {
+        "all": {
+          "n": 7665,
+          "mae": 3.7340200768282963,
+          "rmse": 4.968944320687484
+        },
+        "actual_0_to_2": {
+          "n": 966,
+          "mae": 3.535311709224751,
+          "rmse": 4.963716945295924
+        },
+        "actual_full": 299,
+        "actual_full_predicted_at_least_one": 223,
+        "actual_full_predicted_above_zero": 260,
+        "actual_at_least_one_predicted_below_one": 650
+      }
+    },
+    "2026-09-21_to_27": {
+      "archive_rows": 270893,
+      "archive_stations": 620,
+      "candidate_pairs_before_mapping": 5722,
+      "candidate_stations_before_mapping": 169,
+      "samples": 5584,
+      "stations": 157,
+      "persistence": {
+        "all": {
+          "n": 5584,
+          "mae": 3.633058739255014,
+          "rmse": 5.077215383046624
+        },
+        "actual_0_to_2": {
+          "n": 717,
+          "mae": 3.8326359832635983,
+          "rmse": 5.331415275740475
+        },
+        "actual_full": 234,
+        "actual_full_predicted_at_least_one": 213,
+        "actual_full_predicted_above_zero": 213,
+        "actual_at_least_one_predicted_below_one": 105
+      },
+      "net_flow_adjusted": {
+        "all": {
+          "n": 5584,
+          "mae": 4.091397047118753,
+          "rmse": 5.529761790655473
+        },
+        "actual_0_to_2": {
+          "n": 717,
+          "mae": 3.813594452192778,
+          "rmse": 5.481963105343892
+        },
+        "actual_full": 234,
+        "actual_full_predicted_at_least_one": 186,
+        "actual_full_predicted_above_zero": 208,
+        "actual_at_least_one_predicted_below_one": 616
+      }
+    }
+  },
+  "combined": {
+    "samples": 13249,
+    "stations": 210,
+    "persistence": {
+      "all": {
+        "n": 13249,
+        "mae": 3.5872896067627744,
+        "rmse": 4.911489208324709
+      },
+      "actual_0_to_2": {
+        "n": 1683,
+        "mae": 3.790255496137849,
+        "rmse": 5.236589129956958
+      },
+      "actual_full": 533,
+      "actual_full_predicted_at_least_one": 479,
+      "actual_full_predicted_above_zero": 479,
+      "actual_at_least_one_predicted_below_one": 248
+    },
+    "net_flow_adjusted": {
+      "all": {
+        "n": 13249,
+        "mae": 3.8846422371499734,
+        "rmse": 5.212670926600145
+      },
+      "actual_0_to_2": {
+        "n": 1683,
+        "mae": 3.653867102396513,
+        "rmse": 5.190832660634429
+      },
+      "actual_full": 533,
+      "actual_full_predicted_at_least_one": 409,
+      "actual_full_predicted_above_zero": 468,
+      "actual_at_least_one_predicted_below_one": 1266
+    }
+  }
+}
