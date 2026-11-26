@@ -9,7 +9,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from collect_status import station_map
+from collect_status import DEFAULT_TRIP_FILES, station_map
 from dock_regression import MAX_AGE, MAX_GAP, TARGET_TOLERANCE, metrics
 
 TIME_ZONE = "America/New_York"
@@ -170,7 +170,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--archive", required=True, type=Path)
     parser.add_argument("--station-information", required=True, type=Path)
-    parser.add_argument("--trips", required=True, type=Path, nargs=2)
+    parser.add_argument("--trips", nargs=2, default=DEFAULT_TRIP_FILES, type=Path)
     args = parser.parse_args()
     print(json.dumps(validate(args.archive, args.station_information, args.trips),
                      indent=2, allow_nan=False))
